@@ -1,3 +1,7 @@
+Link to the shiny app: 
+* [GitHub](https://github.com/YufanWu147/Shiny-App-Survival-Analysis/)
+* [shinyapps.io](https://yufan-wu.shinyapps.io/Survival_Analysis/)
+
 Instructions
 ============
 
