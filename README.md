@@ -20,18 +20,18 @@ Providing a summary table of estimates of survival probability and
 cumulative hazard using either the **Kaplan-Meier** or
 **Fleming-Harrington** methods. Check the box
 `Show Confidence Interval?` to obtain two-sided 95% confidence intervals
-(types: linear, log, log-log).
+(CI types: linear, log, log-log).
 
 ##### 1.2 Plot
 
-Drawing survival and cumulative hazard curves for the data. Customize
-your plots by adding a risk table or a number of censored subjects
+Drawing **survival** and **cumulative hazard curves** for the data. Customize
+your plots by adding risk tables or number of censored subjects
 barplot. You can draw stratified curves by selecting either a discrete
 variable or a continuous variable with specified cutpoints.
 
 ##### 1.3 Test
 
-Providing results of a collection of weighted logrank tests for
+Providing results of a collection of **weighted logrank tests** for
 comparing survival distributions for two or more independent groups. For
 more information, see
 [`survMisc::comp`](https://www.rdocumentation.org/packages/survMisc/versions/0.5.5/topics/comp).
