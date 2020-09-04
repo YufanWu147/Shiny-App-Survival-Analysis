@@ -41,8 +41,7 @@ more information, see
 ##### 2.1 Model Results
 
 Providing a summary table of coefficient and hazard ratio estimates,
-standard errors, etc. Also calculating the log-likelihood and AIC of the
-model that can be used in model selection.
+standard errors, etc. Log-likelihood and AIC will also be calculated and they can be used for model selection.
 
 ##### 2.2 Model Diagnosis
 
@@ -54,9 +53,9 @@ assumptions of the cox proportional hazard model.
 ##### 3.1 Model Results
 
 Calculating coefficients, acceleration factors and hazard ratios of
-exponential and weibull model. Also providing informations for model
+exponential and weibull model. Also providing information for model
 comparison.
 
 ##### 3.2 Model Diagnosis
 
-Graphically diagnosing the distributional assumptions of the models.
+Graphically diagnosing the distributional assumptions of the parametric models.
