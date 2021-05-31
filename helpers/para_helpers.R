@@ -17,13 +17,15 @@ parafit <- function(var_names = 1, data, Time, Event,
                       exp(fit$coef - qnorm(0.975)*se),
                       exp(fit$coef + qnorm(0.975)*se))
   
-  colnames(acc_factor) <- c("Acceleration Factor", "2.5 %", "97.5 %")
+  colnames(acc_factor) <- c("Acceleration Factor", "Lower CI (2.5 %)", "Upper CI (97.5 %)")
   
   # HR
   HR_tbl <- cbind(exp(-fit$coef),
-                  exp(-(fit$coef - qnorm(0.975)*se)/fit$scale),
-                  exp(-(fit$coef + qnorm(0.975)*se)/fit$scale))
-  colnames(HR_tbl) <- c("HR", "2.5 %", "97.5 %")
+                  exp(-(fit$coef + qnorm(0.975)*se)/fit$scale),
+                  exp(-(fit$coef - qnorm(0.975)*se)/fit$scale))
+  
+  colnames(HR_tbl) <- c("Hazard Ratio", "Lower CI (2.5 %)", "Upper CI (97.5 %)")
+  
   # AIC & LRT
   loglik <- fit$loglik[2]
   loglik_intcpt <- fit$loglik[1]
@@ -42,7 +44,7 @@ parafit <- function(var_names = 1, data, Time, Event,
                         "Log Likelihood (Null Model)",
                         "Chi-sq",
                         "# Parameters",
-                        "p-value",
+                        "LRT p-value (vs. Null Model)",
                         "AIC")
   rownames(aic_tb) <- NULL
   
