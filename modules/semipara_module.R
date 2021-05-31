@@ -121,8 +121,8 @@ semiPara <- function(input, output, session, data, Time, Event){
   
   # varButton
   observeEvent(input$coxVarButton, {
-    v$semiPara <- coxfit(var_names = cox_var(), data = data(), 
-                     Time = Time(), Event = Event())})
+    v$semiPara <- coxfit(var_names = cox_var(), data = data(),
+                         Time = Time(), Event = Event())})
   
   # Reset Button
   observeEvent(input$resetButton, {
